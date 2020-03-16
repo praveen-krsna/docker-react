@@ -1,0 +1,6 @@
+sudo: required
+services:
+    -docker
+before_install:
+    -docker build -t prk9563/docker-react -f Dockerfile.env .
+    
